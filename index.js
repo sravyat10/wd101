@@ -28,13 +28,13 @@ const displayEntries=()=>
         tableEntries += row;
     })
     const table = `<table><tr>
-        <th class="px-4 py-2">Name</th>
-        <th class="px-4 py-2">Email</th>
-        <th class="px-4 py-2">Password</th>
-        <th class="px-4 py-2" >Date of Birth</th>
-        <th class="px-4 py-2">Accepted terms?</th>
+        <th >Name</th>
+        <th >Email</th>
+        <th>Password</th>
+        <th >Date of Birth</th>
+        <th>Accepted terms?</th>
         </tr>${tableEntries}</table>`;
-        console.log(table);
+
         let details =document.getElementById("user-entries");
         details.innerHTML=table;
     }
